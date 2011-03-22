@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Tweet Banner.  Why?  Why not.  What's Wrong with One More Twitter Follow Banner?</title>
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/lib.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="js/jquery-ui-1.8.4.custom/css/ui-lightness/jquery-ui-1.8.4.custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script src="js/jquery-ui-1.8.4.custom/js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-ui-1.8.4.custom/js/jquery-ui-1.8.4.custom.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.scrollTo-1.4.2-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/lib.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>
+	<script type="text/javascript">
+	try {
+	reinvigorate.track("xu882-j9q1al9823");
+	} catch(err) {}
+	</script>
+</head>
+<body>
+	<div id="main_container">
+		<div class="container container_12">
+			<h1 class="grid_12">twtbnr</h1>
+			<div class="grid_12 header_sub">Create a simple and elegant twitter banner in moments.</div>
+			<div class="grid_4 center">
+				<h2>1. Choose Placement:</h2>
+			</div>
+			<div class="grid_4 center">
+				<h2>2. Enter Username:</h2>
+			</div>
+			<div class="grid_4 center">
+				<h2>3. Get Code:</h2>
+			</div>
+			<div class="clear"></div>
+			<div class="grid_12" id="error_container">
+				<div class="ui-widget" id="error">
+					<div style="padding: 0pt 0.7em;" class="ui-state-error ui-corner-all"> 
+						<p style="text-align: center;">
+							Not so fast Clicky Magee.  You gotta enter your username :)
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="grid_4 center form_sub">
+				<p id="radio">
+					<input type="radio" id="radio1" name="radio" value="left:0px;" /><label for="radio1">Top Left</label>&nbsp;
+					<input type="radio" id="radio2" name="radio" value="right:0px;" checked="checked" /><label for="radio2">Top Right</label>
+				</p>
+			</div>
+			<div class="grid_4 center">
+				<p><input type="text" id="twt_un" name="twt_un" value="Enter Twitter Username Here"></p>
+			</div>
+			<div class="grid_4 center">
+				<p><input value="Get The Code" type="submit" id="sb"></p>
+			</div>
+			<div class="clear"></div>
+			<div class="grid_12" id="code">
+				<div id="directions">Simply copy and paste the code below anywhere in your HTML page.</div>
+				<p id="ta_wrapper"><textarea id="code_ta"></textarea></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="footer">
+		<div class="container container_12">
+			<div class="grid_12">
+				<h3>Stuff You * Might * Care About</h3>
+				<ul>
+					<li>
+						<p>
+							The created code contains zero JavaScript.  That's a good thing.  It's all DIV's and inline CSS.
+						</p>
+					</li>
+				</ul>
+				<h3>The Why</h3>
+				<ul>
+					<li>
+						<p>
+							When I created my <a href="http://johnpatrickgiven.com/jquery/Image-Scale-Carousel/">jQuery Image Scale Carousel</a> plugin I wanted a different, non-intrusive, Twitter banner so people could follow me incase they wanted plugin updates.  Anyway, inspired by the <a href="http://github.com/blog/273-github-ribbons">GitHub ribbons</a>, this site was born.
+						</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="grid_3">
+				<h3>Posterous</h3>
+				<ul>
+					<li>
+						I <span id="blog"></span>.
+					</li>
+				</ul>
+			</div>
+			<div class="grid_3">
+				<h3>Twitter</h3>
+				<ul>
+					<li>
+						I also said "<span id="twitter_data"></span>.
+					</li>
+				</ul>
+			</div>
+			<div class="grid_3">
+				<h3>Last.FM</h3>
+				<ul>
+					<li>
+						The last thing I scrobbled to Last.FM was <span id="lastfm"></span>.
+					</li>
+				</ul>
+			</div>
+			<div class="grid_3">
+				<h3>Delicious</h3>
+				<ul>
+					<li>
+						The last thing I saved to my Delicious was <span id="delicious"></span>.
+					</li>
+				</ul>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div cass="grid_12">
+				<h3 class="">Credits</h3>
+				<ul>
+					<li>
+						Made with love over the course of a Wednesday night and Saturday afternoon by <a href="http://twitter.com/iamjpg">@iamjpg</a>.  Thanks to the creative <a href="http://github.com/blog/273-github-ribbons">GitHub Ribbon</a> for inspiration and reminding me of the <a href="http://makepovertyhistory.org">MakePovertyHistory.org</a> ribbon from around 2005 (You can still see it in action <a href="http://www.redcampaign.org/">here</a>).
+					</li>
+				</ul>
+			</div>
+		<div class="clear"></div>
+	</div>
+	<div id="banner">
+		<div style="overflow:hidden; top: 0px; right: 0px; display: inline-block; position: absolute; z-index: 1000; width: 200px; height: 200px;">
+			<div style="position: relative; top: -76px; right: 18px;">
+				<a href="http://twitter.com/iamjpg"><img border="0" src="http://twtbnr.com/images/bnr_right.png"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
